@@ -1,4 +1,4 @@
-name: semeval_10_ham
+name: semeval_10
 channels:
  - defaults
 dependencies:

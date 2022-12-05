@@ -247,6 +247,7 @@ def set_seed(seed=42):
     torch.backends.cudnn.deterministic = False
 
 def main():
+    #----------------- DO NOT CHANGE THESE PARAM -----------------------------
     logging.basicConfig(
     filename='./logs/model_log.txt',
     level=logging.INFO,
@@ -264,7 +265,7 @@ def main():
 
     args.num_classes_layer = [2, 5, 12]
     args.total_classes = 19
-
+    
     args.input_file_path = os.path.join(os.path.curdir, "data", "train_all_tasks.csv")
     #args.input_file_path = os.path.join(os.path.curdir, "data", "downsample_train_all_tasks.csv")
     args.split_ration = 0.3
@@ -272,7 +273,11 @@ def main():
     args.best_model_file_path = os.path.join(os.path.curdir, "result", "model_best.pth")
     args.save_classification_report_filepath = os.path.join(os.path.curdir, "result", "classification_report.csv")
     args.save_loss_curve = os.path.join(os.path.curdir, "result", "loss_curve.png")
-    args.is_eval = False
+    #------------------------------------------------------------------------------
+    
+    
+    # -------------------- YOU MAY EDIT THE BELOW PARAM ----------------------------
+    args.is_eval = False # False for training, True for evaluation
 
     args.print_every = 1
     args.evaluate_every = 1
@@ -280,7 +285,6 @@ def main():
 
     args.embedding_size = 400
     args.seq_length = 128
-
 
     args.batch_size = 16
     args.epochs = 15
@@ -298,6 +302,7 @@ def main():
     args.threshold = 0.5
     args.top_num = 3
     args.best_prc = 0
+    # ---------------------------------------------------------------------------------
 
 
     run(args)
