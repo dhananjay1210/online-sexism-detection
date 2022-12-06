@@ -10,7 +10,7 @@ __pycache__/
 *.so
 
 # glove embeddings
-/Model3-BiLSTM/glove
+/Model3-BiLSTM/glove/*.txt
 
 # trained model
 *.pth
