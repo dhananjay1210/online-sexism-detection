@@ -3,7 +3,22 @@
 Step 1: Check conda installation
 
 You need anaconda or miniconda installed. Run 'which conda' (Linux/Mac) platform or 'where conda' (Windows) platform to check whether conda is installed or not.
-You can install minicinda from here - https://docs.conda.io/en/latest/miniconda.html 
+You can install minicinda using following commands -
+
+mkdir -p ./miniconda3
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ./miniconda3/miniconda.sh
+
+bash ./miniconda3/miniconda.sh -b -u -p ./miniconda3
+
+rm -rf ./miniconda3/miniconda.sh
+
+./miniconda3/bin/conda init bash
+
+./miniconda3/bin/conda init zsh
+
+
+More details at - https://docs.conda.io/en/latest/miniconda.html 
 
 Step 2: Installing dependancies
 

@@ -19,7 +19,4 @@ dependencies:
    - seaborn
    - scikit-plot
    - tqdm
-   - tensorflow
-   - keras
-   - keras_preprocessing
    - xgboost
