@@ -2,8 +2,8 @@
 
 ### Step 1: Check conda installation
 
-You need anaconda or miniconda installed. Run 'which conda' (Linux/Mac) platform or 'where conda' (Windows) platform to check whether conda is installed or not.
-You can install minicinda using following commands -
+You need anaconda or miniconda installed. Run 'which conda' (Linux/Mac platform) or 'where conda' (Windows platform) to check whether conda is installed or not.
+You can install miniconda using following commands -
 ```
 mkdir -p ./miniconda3
 
